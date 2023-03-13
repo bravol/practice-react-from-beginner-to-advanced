@@ -1,0 +1,43 @@
+
+// REDUX
+// A predictable state container for js Apps
+// A state management tool for React
+// Functionally similar to context API
+
+// COMPARING REDUX & CONTEXT API
+// CONTEXT API
+// Built-in tool that ships with React
+// Requires minimal Setup
+// Specifically designed for static data, that is not often refreshed or updated
+// Adding new contexts requires creation from scratch
+// Debugging can be hard in highly nested React component Structure even with Dev Tool
+
+// REDUX
+// Additional installation required, driving up the final bundle size
+// Requires extensive setup to integrate it with a React Application
+// Works like a charm with both static and dynamic data
+// Easily extendible due to the ease of adding new data/actions after the initial setup
+// Incredibly powerful Redux Dev Tools to ease debugging
+
+//WHY YOU SHOULD LEARN REDUX
+// Many companies use Redux for state management and its part of the knowledge requirement
+//If your own project starts getting very complex, you can switch to Redux
+
+// It gets data from the store with useSelector()
+// It is only a reducer function that can change the stored data(the component dispatches an Action by using useDispatch() hook and the action is sent to use reducer to change data in store )
+
+
+REDUX INSTRUCTIONS.
+1.--Install redux -npm install redux react-redux
+2.--Create a store - where all your data would be stored
+3.--create a reducer and pass it as an argument to the store
+4.-- Provide your store to the App.js component
+5.--Use/access the store from any component
+6. Dispatch action from the respective component
+
+
+REDUX TOOLKIT INSTRUCTIONS
+--Install redux toolkit - npm install @reduxjs/toolkit
+1.combine reducer and actions into a slice
+2.replace createStore() with configureStore()
+3.Update useSelector() and useDispatch() on the component
